@@ -45,10 +45,9 @@ To build this project run
 ## Authors
 
 - [Mergik](https://www.github.com/mergik)
-- [####](https://www.github.com/####)
-- [####](https://www.github.com/####)
-- [####](https://www.github.com/####)
-- [####](https://www.github.com/####)
+- [Annah Njuguna](https://www.github.com/njugunaannah)
+- [Michael Mutinda](https://www.github.com/KollihTheGuruh)
+- [Hillary Kiprotich](https://www.github.com/hillary-254)
 
 ## License
 
