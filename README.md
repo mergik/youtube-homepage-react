@@ -48,6 +48,8 @@ To build this project run
 - [Annah Njuguna](https://www.github.com/njugunaannah)
 - [Michael Mutinda](https://www.github.com/KollihTheGuruh)
 - [Hillary Kiprotich](https://www.github.com/hillary-254)
+- [Kennedy Ryan ](https://www.github.com/KennedyRyan-code)
+- [Steve Murimi](https://www.github.com/Stevecmd)
 
 ## License
 
