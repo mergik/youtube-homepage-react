@@ -3,7 +3,7 @@ import { SearchInput } from "./SearchInput";
 
 export const Navbar = () => {
   return (
-    <div className=" flex flex-row items-center p-3 bg-slate-950 text-slate-50">
+    <div className="flex flex-row items-center p-3 bg-slate-950 text-slate-50">
       <button type="submit" className="mx-3 text-gray-400">
         <svg
           xmlns="http://www.w3.org/2000/svg"
