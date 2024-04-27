@@ -9,7 +9,7 @@ import Settings from './Settings'
 
 const Sidebar = () => {
   return (
-    <div className='bg-red-400 w-[220px]'>
+    <div className='w-[250px] mr-2 p-2 bg-black text-white'>
         <Nav/>
         <You/>
         <Subscriptions/>   

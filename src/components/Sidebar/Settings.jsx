@@ -2,8 +2,8 @@ import React from "react";
 
 const Settings = () => {
   return (
-    <div className="bg-cyan-700">
-      <div className="flex">
+    <div className="border-b space-y-1 text-sm border-gray-700">
+      <div className="flex rounded-lg p-2 items-center hover:bg-gray-800 cursor-pointer space-x-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -27,7 +27,7 @@ const Settings = () => {
         <p> Settings</p>
       </div>
 
-      <div className="flex">
+      <div className="flex rounded-lg p-2 items-center hover:bg-gray-800 cursor-pointer space-x-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -46,7 +46,7 @@ const Settings = () => {
         <p> Report History</p>
       </div>
 
-      <div className="flex">
+      <div className="flex rounded-lg p-2 items-center hover:bg-gray-800 cursor-pointer space-x-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -65,7 +65,7 @@ const Settings = () => {
         <p> Help</p>
       </div>
 
-      <div className="flex">
+      <div className="flex rounded-lg p-2 items-center hover:bg-gray-800 cursor-pointer space-x-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
