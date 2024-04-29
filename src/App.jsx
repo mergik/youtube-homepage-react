@@ -1,5 +1,6 @@
 import { Navbar } from './components/Navigation/Navbar'
 import Sidebar from './components/Sidebar/Sidebar'
+import { Videobody } from './components/Videobody/Videobody'
 
 function App() {
  
@@ -7,12 +8,10 @@ function App() {
     <div className='font-roboto'>
       <Navbar/>
       
-      <div className='flex min-h-screen bg-blue-400'>
+      <div className='flex min-h-screen'>
         <Sidebar/>
+        <Videobody/>
         
-        <h1 className="text-[100pt] underline m-3 font-roboto font-thin">
-          Hello World!
-        </h1>
       </div>
     </div>
   )
