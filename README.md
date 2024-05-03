@@ -67,3 +67,13 @@ Replace "branch-name" with the branch whose changes you want to merge
 git merge origin/<branch-name>
 
 ```
+Initial setup of the upstream branch:
+```sh
+
+git push -u origin steve
+
+```
+After this you can push using:
+```sh
+git push
+```
