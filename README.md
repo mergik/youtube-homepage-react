@@ -54,3 +54,16 @@ To build this project run
 ## License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+
+## Deploying changes to the branch "Steve"
+```sh
+git checkout main 
+git pull
+git checkout steve
+```
+Replace "branch-name" with the branch whose changes you want to merge
+```sh
+git merge origin/<branch-name>
+
+```
