@@ -30,10 +30,12 @@ export const AboutUs = () => {
           <div className="mt-6 font-medium">
             <p className="text-gray-700">Team Members:</p>
             <ul className="list-disc list-inside text-gray-700">
-              <li>Michael Mutinda - Frontend/Backend Enginner</li>
-              <li>Annah Njuguna - Frontend/Backend Enginner</li>
+              <li>Michael Mutinda - Frontend/Backend Engineer</li>
+              <li>Annah Njuguna - Frontend/Backend Engineer</li>
               <li>Merlix Gikunju - Frontend/Backend Enginner</li>
-              <li>Hillary Kiprotich - Frontend/Backend Enginner</li>
+              <li>Hillary Kiprotich - Frontend/Backend Engineer</li>
+              <li>Kennedy Ryan - Frontend/Backend Engineer</li>
+              <li>Steve Murimi - Frontend/Backend Engineer</li>
             </ul>
           </div>
         </div>

@@ -1,14 +1,18 @@
 import React from 'react';
 import Mike from './mike1.jpg';
 import Annah from './Annah.png';
-import Merlix from './Merlix.webp';
+import Merlix from './mergic.jpeg';
 import Hillary from './hillary.jpg';
+import Kennedy from './Ken.jpeg'
+import Steven from './Steve.jpeg'
 
 const teamMembers = [
   { name: 'Michael Mutinda', imageUrl: Mike, whatsappNumber: '+254717219123' },
   { name: 'Annah Njuguna', imageUrl: Annah, whatsappNumber: '+254702351165' },
   { name: 'Merlix Gikunju', imageUrl: Merlix, whatsappNumber: '+254728788129' },
-  { name: 'Hillary Kiprotich', imageUrl: Hillary, whatsappNumber: '+254797490998' }
+  { name: 'Hillary Kiprotich', imageUrl: Hillary, whatsappNumber: '+254797490998' },
+  { name: 'Steve Murimi', imageUrl: Steven, whatsappNumber: '+254720612976' },
+  { name: 'Kennedy Ryan', imageUrl: Kennedy, whatsappNumber: '+254790903801' }
 ];
 
 export const ContactUs = () => {
