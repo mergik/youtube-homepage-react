@@ -18,7 +18,7 @@ const Sidebar = () => {
     <div className="grid" style={{ gridTemplateColumns: isOpen ? '250px 1fr' : '1fr' }}>
       {/* Sidebar */}
       {isOpen && (
-        <div className={`bg-black text-white transition-all duration-300`}>
+        <div className={`bg-black text-white transition-all duration-300 overflow-y-auto fixed top-16 left-0 bottom-0 w-64`} style={{ height: 'calc(100vh - 64px)' }}>
           <Nav />
           <You />
           <Subscriptions />
