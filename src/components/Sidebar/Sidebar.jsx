@@ -15,24 +15,30 @@ const Sidebar = () => {
   };
 
   return (
-    <>
+    <div className="grid" style={{ gridTemplateColumns: isOpen ? '250px 1fr' : '1fr' }}>
+      {/* Sidebar */}
+      {isOpen && (
+        <div className={`bg-black text-white transition-all duration-300`}>
+          <Nav />
+          <You />
+          <Subscriptions />
+          <Explore />
+          <More />
+          <Settings />
+          <Footer />
+        </div>
+      )}
+      {/* Main content */}
+      <div className={`transition-all duration-300 ${!isOpen ? 'col-span-2' : ''}`}>
+        {/* Your main content components */}
+      </div>
       {/* Hamburger icon */}
       <button className="fixed top-4 left-4 z-50" onClick={toggleSidebar}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
           <path d="M3 12h18M3 6h18M3 18h18"></path>
         </svg>
       </button>
-      {/* Sidebar */}
-      <div className={`fixed top-[64px] left-0 bottom-0 bg-black text-white w-[250px] transition-all duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-        <Nav />
-        <You />
-        <Subscriptions />
-        <Explore />
-        <More />
-        <Settings />
-        <Footer />
-      </div>
-    </>
+    </div>
   );
 };
 
