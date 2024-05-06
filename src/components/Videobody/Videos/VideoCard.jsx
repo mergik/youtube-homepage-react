@@ -3,7 +3,7 @@ import React from "react";
 
 export const VideoCard = () => {
   return (
-    <div className="flex flex-row flex-wrap" style={{ paddingTop: '6rem' }}>
+    <div className="flex flex-row flex-wrap pt-24 px-3">
         <section className="flex flex-col justify-center m-2 bg-gray-800 rounded-lg">
             <section className="flex flex-col">
                 <img src="https://derraleves.com/wp-content/uploads/2020/05/the-best-youtube-thumbnails-that.jpg" className="w-[365px] h-[206px] cursor-pointer rounded-lg" alt="youtube-thumbnail"/>        
