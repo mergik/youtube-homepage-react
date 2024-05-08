@@ -6,7 +6,7 @@ const useYouTubeSearch = () => {
 
     const fetchSearchResults = async(searchQuery) => {
         try{
-            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=${searchQuery}&key=${import.meta.env.YTAPIKEY}`)
+            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=${searchQuery}&key=${}`)
             const data = await response.json();
             console.log(data)
             setSearchResults(data.items || [])
