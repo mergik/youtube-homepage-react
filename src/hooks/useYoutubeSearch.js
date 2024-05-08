@@ -1,7 +1,8 @@
-import { useState } from 'react';
+/*import { useEffect, useState } from 'react';
 
 const useYouTubeSearch = () => {
     const [searchResults, setSearchResults] = useState([]);
+    //const [searchQuery, setSearchQuery] = useState('');
 
     const fetchSearchResults = async(searchQuery) => {
         try{
@@ -16,7 +17,13 @@ const useYouTubeSearch = () => {
         }
     }
     //return { searchResults, fetchSearchResults }
-    fetchSearchResults('trending')
+    //fetchSearchResults('trending')
+    /*useEffect(() => {
+        fetchSearchResults(searchQuery || 'trending');
+    }, []);
+     
 }
 
-export default useYouTubeSearch;
+export default useYouTubeSearch; 
+
+*/
