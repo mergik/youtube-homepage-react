@@ -12,7 +12,7 @@ export const VideoCard = () => {
 
     const fetchSearchResults = async(searchQuery) => {
         try{
-            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${searchQuery}&key={}`)
+            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${searchQuery}&key=${import.meta.env.VITE_APIKEY}`)
             const data = await response.json();
             console.log(data)
             setSearchResults(data.items || [])
