@@ -1,6 +1,11 @@
 import React from 'react';
+import { useYoutubeSearch } from '../../hooks/useYoutubeSearch';
 
 const SearchResults = () => {
+    const {searchResults} = useYoutubeSearch();
+
+    console.log(searchResults)
+
   return (
     <div className='flex max-w-[1096px] overflow-auto text-xl pt-[7rem] px-5 bg-black'>
         {/* Thumbnail & Video Length */}
