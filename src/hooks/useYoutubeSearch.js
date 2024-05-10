@@ -1,29 +1,21 @@
-/*import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
-const useYouTubeSearch = () => {
+export const useYoutubeSearch = () => {
     const [searchResults, setSearchResults] = useState([]);
-    //const [searchQuery, setSearchQuery] = useState('');
 
-    const fetchSearchResults = async(searchQuery) => {
-        try{
-            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=${searchQuery}&key=${}`)
+    const fetchSearchResults = async (searchQuery) => {
+        try {
+            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${searchQuery}&key=${import.meta.env.VITE_APIKEY}`);
             const data = await response.json();
-            console.log(data)
-            setSearchResults(data.items || [])
-
-
+            setSearchResults(data.items || []);
         } catch (error) {
-            console.error('ERROR FETCHING DATA FROM YOUTUBE API!', error)
+            console.error('ERROR FETCHING DATA FROM YOUTUBE API!', error);
         }
-    }
-    //return { searchResults, fetchSearchResults }
-    //fetchSearchResults('trending')
-    /*useEffect(() => {
-        fetchSearchResults(searchQuery || 'trending');
+    };
+
+    useEffect(() => {
+        fetchSearchResults('trending');
     }, []);
-     
-}
 
-export default useYouTubeSearch; 
-
-*/
+    return { searchResults, fetchSearchResults };
+};
