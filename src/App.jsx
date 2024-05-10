@@ -4,6 +4,8 @@ import Sidebar from './components/Sidebar/Sidebar';
 import { Videobody } from './components/Videobody/Videobody';
 import { AboutUs } from './pages/AboutUs/AboutUs';
 import { ContactUs } from './pages/ContactUs/ContactUs';
+import SearchResults from './pages/SearchResults/SearchResults';
+
 
 function App() {
   return (
@@ -15,9 +17,11 @@ function App() {
           <Sidebar />
           {/* Routes replace the Switch component */}
           <Routes>
+            <Route path="/" element={<Videobody />} />
+            <Route path="/search" element={<SearchResults />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<ContactUs />} />
-            <Route path="/" element={<Videobody />} />
+            
           </Routes>
         </div>
       </div>
