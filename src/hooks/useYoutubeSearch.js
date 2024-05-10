@@ -5,7 +5,7 @@ export const useYoutubeSearch = () => {
 
     const fetchSearchResults = async (searchQuery) => {
         try {
-            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=10&q=${searchQuery}&key=${import.meta.env.VITE_APIKEY}`);
+            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=50&q=${searchQuery}&key=${import.meta.env.VITE_APIKEY}`);
             const data = await response.json();
             
             const videoIds = data.items.map(item => item.id.videoId).join(',');
@@ -26,10 +26,6 @@ export const useYoutubeSearch = () => {
             console.error('ERROR FETCHING DATA FROM YOUTUBE API!', error);
         }
     };
-
-    useEffect(() => {
-        fetchSearchResults('trending');
-    }, []);
 
     return { searchResults, fetchSearchResults };
 };
