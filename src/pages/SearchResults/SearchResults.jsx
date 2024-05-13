@@ -2,7 +2,7 @@ import React from 'react';
 import { useYoutubeSearch } from '../../hooks/useYoutubeSearch';
 
 const SearchResults = () => {
-    const {searchResults} = useYoutubeSearch();
+    const {searchResults} = useYoutubeSearch(); // Destructure searchResults from the custom hook
 
     console.log(searchResults)
 
