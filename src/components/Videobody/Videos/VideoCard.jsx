@@ -10,21 +10,29 @@ export const VideoCard = () => {
     }, []);
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+        <div className="flex flex-row flex-wrap pt-24 px-3">
             {searchResults.map((data) => (
-                <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden" key={data.id}>
-                    <img src={data.snippet.thumbnails.high.url} className="w-full" alt="youtube-thumbnail"/>
-                    <div className="p-4">
-                        <p className="text-xl font-semibold text-gray-200 line-clamp-2">{data.snippet.title}</p>
-                        <p className="text-gray-400 text-sm line-clamp-1">{data.snippet.channelTitle}</p>
-                        <div className="flex justify-between mt-2">
-                            <p className="text-gray-400 text-sm">{data.statistics.viewCount} Views</p>
-                            <p className="text-gray-400 text-sm">{data.statistics.likeCount} Likes</p>
-                            <p className="text-gray-400 text-sm">{data.statistics.commentCount} Comments</p>
-                        </div>
+                <section className="flex flex-col justify-center m-2 bg-gray-800 rounded-lg">
+                <section className="flex flex-col">
+                    <img src={data.snippet.thumbnails.high.url} className="w-[365px] h-[206px] cursor-pointer rounded-lg" alt="youtube-thumbnail"/>        
+                </section>
+                <section className="flex flex-row my-2 cursor-pointer">
+                    <img src={data.snippet.thumbnails.default.url} className="w-[36px] h-[36px] m-2 ml-0  rounded-full " alt="profile-pic"/>
+                <div className="flex flex-col justify-start">
+                    <p className=" text-wrap text-xl w-[272px]  line-clamp-2  font-semibold text-gray-50">{data.snippet.title}</p>
+                    <a href="#" className="text-sm cursor-pointer text-gray-400">{data.snippet.channelTitle}</a>
+                    <div className="flex space-x-2">
+                    <p className="text-gray-400 text-sm">{data.statistics.viewCount} Views</p>
+                            {/* <p className="text-gray-400 text-sm">{data.statistics.likeCount} Likes</p>
+                            <p className="text-gray-400 text-sm">{data.statistics.commentCount} Comments</p> */}
                     </div>
                 </div>
+                </section>
+            </section>
             ))}
+            
+        
         </div>
-    );
-};
+      )
+    }
+    
