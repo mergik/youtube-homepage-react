@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export const useYoutubeSearch = () => {
-    const [searchResults, setSearchResults] = useState(''); // Initialize searchResults state with an empty string
+    const [searchResults, setSearchResults] = useState([]); // Initialize searchResults state with an empty string
 
     const fetchSearchResults = async (searchQuery) => {
         try {
