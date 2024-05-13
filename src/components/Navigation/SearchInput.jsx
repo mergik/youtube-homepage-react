@@ -11,7 +11,7 @@ export const SearchInput = () => {
   const handleSearch = async (e) => {
     e.preventDefault();
     await fetchSearchResults(searchTerm);
-    navigate(`/search?q=${searchResults}`); // This is the line that is causing the error fixed it from navigate(`/search?q=${searchTerm}`);
+    navigate(`/search?q=${searchTerm}`); // Navigate to the search results page
     console.log(searchResults);
   }
 
