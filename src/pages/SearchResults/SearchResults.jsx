@@ -32,7 +32,7 @@ const SearchResults = () => {
             {/* Views & Date */}
             <div className="flex space-x-1 text-sm items-center">
               <p>{data.statistics.viewCount} Views</p>
-              <p>• Upload Date</p>
+              <p>• {data.snippet.publishTime} ago</p>
             </div>
 
             {/* Channel Info */}
@@ -47,10 +47,7 @@ const SearchResults = () => {
 
             {/* Description */}
             <p className="text-sm line-clamp-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit architecto rem laborum doloribus est ratione aperiam
-              ipsum, quam officiis minima magnam molestias odit, exercitationem
-              error similique possimus illo hic perspiciatis?
+              {data.snippet.description}
             </p>
           </div>
         </section>
