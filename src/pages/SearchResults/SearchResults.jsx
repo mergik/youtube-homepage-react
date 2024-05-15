@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import { useYoutubeSearchformatUploadDate, useformatViewsCount } from "../../hooks/useformatViewsCount";
 
 const SearchResults = () => {
   const location = useLocation();
@@ -33,8 +34,8 @@ const SearchResults = () => {
 
             {/* Views & Date */}
             <div className="flex space-x-1 text-sm items-center">
-              <p>{data.statistics.viewCount} Views</p>
-              <p>• {data.snippet.publishTime} ago</p>
+              <p>{ useformatViewsCount(data.statistics.viewCount) } Views</p>
+              <p>• { useYoutubeSearchformatUploadDate(data.snippet.publishTime) } </p>
             </div>
 
             {/* Channel Info */}
