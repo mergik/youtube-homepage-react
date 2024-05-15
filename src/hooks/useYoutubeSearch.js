@@ -28,9 +28,5 @@ export const useYoutubeSearch = () => {
         }
     };
 
-    useEffect(() => {
-        fetchSearchResults('trending');
-    }, []);
-
     return { searchResults, fetchSearchResults };
 };

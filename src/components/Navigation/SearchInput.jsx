@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useYoutubeSearch } from "../../hooks/useYoutubeSearch";
 import { useNavigate } from "react-router-dom";
+import { ResultsContext } from "../../context/ResultsContext";
 
 
 export const SearchInput = () => {
-  const { searchResults, fetchSearchResults } = useYoutubeSearch();
+  //const { searchResults, fetchSearchResults } = useYoutubeSearch();
+  const { searchResults, fetchSearchResults } = useContext(ResultsContext)
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
 
