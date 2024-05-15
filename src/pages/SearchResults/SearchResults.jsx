@@ -8,6 +8,8 @@ const SearchResults = () => {
   console.log(searchResults);
 
   return (
+    <div className="flex flex-col auto-cols-auto flex-grid ">
+    <div className="flex flex-col auto-cols-auto"></div>
     <div className="flex flex-col w-full  justify-end  overflow-auto text-xl pt-[7rem] px-5 bg-black"> /* max-w-[1096px]*/
       {searchResults.map((data) => (
         <section className="flex" key={data.id}>
@@ -52,6 +54,8 @@ const SearchResults = () => {
           </div>
         </section>
       ))}
+    </div>
+    <div className="flex"></div>
     </div>
   );
 };
