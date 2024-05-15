@@ -6,7 +6,7 @@ export const VideoCard = () => {
   const { searchResults, fetchSearchResults } = useYoutubeSearch();
 
   useEffect(() => {
-    fetchSearchResults("trending in kenya");
+    fetchSearchResults("news in kenya");
   }, []);
 
   const formatViewsCount = (viewsCount) => {

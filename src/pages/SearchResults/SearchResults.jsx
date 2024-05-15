@@ -8,13 +8,15 @@ const SearchResults = () => {
   console.log(searchResults);
 
   return (
-    <div className="flex flex-col w-full justify-items-start items-center overflow-auto text-xl pt-[7rem] px-5 bg-black"> /* max-w-[1096px]*/
+    <div className="flex w-full">
+      <div className="grow bg-black"></div>
+        <div className="flex grow-0 min-w-[300px] flex-col max-w-[1096px]  text-xl pt-[7rem] px-5 bg-black"> /* max-w-[1096px]*/
       {searchResults.map((data) => (
         <section className="flex" key={data.id}>
           {/* Thumbnail & Video Length */}
           <div className="relative max-h-[201px] max-w-[360px]  m-2">
             <img
-              className="rounded-xl max-h-[201px] max-w-[360px]"
+              className="rounded-xl h-[201px] w-[360px]"
               src={data.snippet.thumbnails.high.url}
               alt="thumbnail"
             />
@@ -52,6 +54,8 @@ const SearchResults = () => {
           </div>
         </section>
       ))}
+      </div>
+      <div className="grow bg-black"></div>
     </div>
   );
 };
