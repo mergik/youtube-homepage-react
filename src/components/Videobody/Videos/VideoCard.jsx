@@ -1,14 +1,18 @@
 // VideoCard.js
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { useYoutubeSearch } from "../../../hooks/useYoutubeSearch";
 import { useformatViewsCount } from "../../../hooks/useformatViewsCount";
 import { useYoutubeSearchformatUploadDate } from "../../../hooks/useformatViewsCount";
+import { ResultsContext } from "../../../context/ResultsContext";
 
 export const VideoCard = () => {
-    const { searchResults, fetchSearchResults } = useYoutubeSearch();
+    // const { searchResults, fetchSearchResults } = useYoutubeSearch();
+
+    //step 3 consuming ResultsContext
+    const { searchResults, fetchSearchResults } = useContext(ResultsContext)
 
     useEffect(() => {
-        fetchSearchResults("trending in kenya");
+        fetchSearchResults("news in kenya");
     }, []);
 
     return (
