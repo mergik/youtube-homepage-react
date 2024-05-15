@@ -8,7 +8,7 @@ const SearchResults = () => {
   console.log(searchResults);
 
   return (
-    <div className="flex flex-col w-full justify-items-start items-center overflow-auto text-xl pt-[7rem] px-5 bg-black"> /* max-w-[1096px]*/
+    <div className="flex flex-col w-full  justify-end  overflow-auto text-xl pt-[7rem] px-5 bg-black"> /* max-w-[1096px]*/
       {searchResults.map((data) => (
         <section className="flex" key={data.id}>
           {/* Thumbnail & Video Length */}
