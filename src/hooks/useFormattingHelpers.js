@@ -1,5 +1,5 @@
 
-export const useYoutubeSearchformatUploadDate = (uploadDate) => {
+export const useFormatUploadDate = (uploadDate) => {
     const now = new Date();
     const uploadedAt = new Date(uploadDate);
     const timeDiff = now.getTime() - uploadedAt.getTime();
@@ -26,7 +26,7 @@ export const useYoutubeSearchformatUploadDate = (uploadDate) => {
 };
 
 
-export const useformatViewsCount = (viewsCount) => {
+export const useFormatViewCount = (viewsCount) => {
     if (viewsCount < 1000) {
       return viewsCount;
     } else if (viewsCount < 1000000) {
