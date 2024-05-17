@@ -1,10 +1,7 @@
 import React, { useContext } from "react";
 //import { useLocation } from "react-router-dom";
-import {
-  useYoutubeSearchformatUploadDate,
-  useformatViewsCount,
-} from "../../hooks/useformatViewsCount";
 import { ResultsContext } from "../../context/ResultsContext";
+import { useFormatUploadDate, useFormatViewCount } from "../../hooks/useFormattingHelpers";
 
 const SearchResults = () => {
   //const location = useLocation();
@@ -17,15 +14,15 @@ const SearchResults = () => {
   return (
     <div className="flex w-full">
       <div className="grow bg-black"></div>
-      <div className="flex grow-0 min-w-[300px] flex-col max-w-[1096px]  text-xl pt-[7rem] px-5 bg-black">
+      <div className="flex flex-col grow-0 shrink-0 max-w-[1096px]  text-xl pt-[7rem] px-5 bg-black">
         {" "}
         /* max-w-[1096px]*/
         {searchResults.map((data) => (
           <section className="flex" key={data.id}>
             {/* Thumbnail & Video Length */}
-            <div className="relative max-h-[201px] max-w-[360px]  m-2">
+            <div className="relative h-[201px] w-[360px] m-2">
               <img
-                className="rounded-xl h-[201px] w-[360px]"
+                className="object-cover rounded-xl h-[210px] max-w-[360px]"
                 src={data.snippet.thumbnails.high.url}
                 alt="thumbnail"
               />
@@ -42,9 +39,9 @@ const SearchResults = () => {
 
               {/* Views & Date */}
               <div className="flex space-x-1 text-sm items-center">
-                <p>{useformatViewsCount(data.statistics.viewCount)} Views</p>
+                <p>{useFormatViewCount(data.statistics.viewCount)} Views</p>
                 <p>
-                  • {useYoutubeSearchformatUploadDate(data.snippet.publishTime)}{" "}
+                  • {useFormatUploadDate(data.snippet.publishTime)}{" "}
                 </p>
               </div>
 
