@@ -1,9 +1,7 @@
 // VideoCard.js
 import React, { useContext, useEffect } from "react";
-import { useYoutubeSearch } from "../../../hooks/useYoutubeSearch";
-import { useformatViewsCount } from "../../../hooks/useformatViewsCount";
-import { useYoutubeSearchformatUploadDate } from "../../../hooks/useformatViewsCount";
 import { ResultsContext } from "../../../context/ResultsContext";
+import { useFormatUploadDate, useFormatViewCount } from "../../../hooks/useFormattingHelpers";
 
 export const VideoCard = () => {
     // const { searchResults, fetchSearchResults } = useYoutubeSearch();
@@ -22,10 +20,10 @@ export const VideoCard = () => {
                     className="flex flex-col justify-center m-2 rounded-lg"
                     key={data.id}
                 >
-                    <section className="flex flex-col">
+                    <section className="flex flex-col w-[365px] h-[206px]">
                         <img
                             src={data.snippet.thumbnails.high.url}
-                            className="w-[365px] h-[206px] cursor-pointer rounded-lg"
+                            className="w-full h-full cursor-pointer rounded-lg"
                             alt="youtube-thumbnail"
                         />
                     </section>
@@ -47,13 +45,11 @@ export const VideoCard = () => {
                             </a>
                             <div className="flex space-x-2">
                                 <p className="text-gray-400 text-sm">
-                                    {useformatViewsCount(
-                                        data.statistics.viewCount
-                                    )}{' '}
+                                    {useFormatViewCount(data.statistics.viewCount)}{' '}
                                     Views
                                 </p>
                                 <p className="text-gray-400 text-sm">
-                                • {useYoutubeSearchformatUploadDate(data.snippet.publishedAt)}
+                                • {useFormatUploadDate(data.snippet.publishedAt)}
                                 </p>
                                 {/* <p className="text-gray-400 text-sm">{data.statistics.likeCount} Likes</p>
                         <p className="text-gray-400 text-sm">{data.statistics.commentCount} Comments</p> */}
