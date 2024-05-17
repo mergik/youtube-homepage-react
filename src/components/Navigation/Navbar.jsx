@@ -21,6 +21,16 @@ export const Navbar = () => {
         </svg>
       </button>
 
+      {/* <a href="/" className="flex basis-1/4 items-center ml-3">
+        <img
+          src="/ReactTube_Logo-White.png"
+          className="h-32 m-1"
+        ></img>
+        <h2 className="">
+          <sup className="font-thin text-gray-400">KE</sup>
+        </h2>
+      </a> */}
+
       <a href="/" className="flex basis-1/4 items-center ml-3">
         <img
           src="https://img.icons8.com/?size=48&id=19318&format=png"
