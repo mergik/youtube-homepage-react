@@ -4,6 +4,7 @@ import { SearchInput } from './SearchInput';
 export const Navbar = () => {
   return (
     <div className="flex flex-row items-center p-3 bg-slate-950 text-slate-50 fixed top-0 w-full z-10">
+      {/* Hamburger Menu */}
       <button type="submit" className="mx-3 text-gray-400">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,23 +22,13 @@ export const Navbar = () => {
         </svg>
       </button>
 
-      {/* <a href="/" className="flex basis-1/4 items-center ml-3">
-        <img
-          src="/ReactTube_Logo-White.png"
-          className="h-32 m-1"
-        ></img>
-        <h2 className="">
-          <sup className="font-thin text-gray-400">KE</sup>
-        </h2>
-      </a> */}
-
+      {/* Logo */}
       <a href="/" className="flex basis-1/4 items-center ml-3">
         <img
-          src="https://img.icons8.com/?size=48&id=19318&format=png"
-          className="h-6 m-2 mr-1"
+          src="/ReactTube_Logo-White.png"
+          className="w-32"
         ></img>
-        <h2 className="m-1 ml-0 font-extrabold">
-          YouTube
+        <h2 className="">
           <sup className="font-thin text-gray-400">KE</sup>
         </h2>
       </a>
