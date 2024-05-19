@@ -1,44 +1,30 @@
 import React from 'react';
-import codse from './codse.webp'
-import teamcol from './teamcol.webp'
-import uiux from './uiux.webp'
-import planning from './planning.webp'
-import Design from './design.png'
+import Banner from "/ReactTube_About_Banner.webp"
 
 export const AboutUs = () => {
   return (
-    <div className="bg-white text-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div className="space-y-6">
-            <img src={teamcol} alt="Team Collaboration" className="w-full object-cover rounded-lg shadow-lg" />
-            <img src={teamcol} alt="Coding Session" className="w-full object-cover rounded-lg shadow-lg" />
-          </div>
-          <div className="space-y-6">
-            <img src={planning} alt="Project Planning" className="w-full object-cover rounded-lg shadow-lg" />
-            <img src={uiux} alt="UI/UX Design" className="w-full object-cover rounded-lg shadow-lg" />
-          </div>
-        </div>
-        <div className="text-center p-8 shadow-lg rounded-lg bg-gray-50">
-          <h1 className="text-4xl font-bold text-gray-800 mb-6">About Our Project</h1>
-          <p className="text-lg font-medium text-gray-600">
-            Initiated as a post-graduate collaboration after completing the ALX Africa SE Program, our project represents the culmination of our learning journey. It embodies our dedication to mastering cutting-edge technologies in front-end development, version control with Git, and effective team collaboration.
-          </p>
-          <p className="text-lg font-medium text-gray-600 mt-4">
-            Our goal was to develop a robust platform that not only showcases our technical skills but also promotes the importance of teamwork and shared learning. We have designed and built an application that is intuitive, responsive, and visually appealing, reflecting the high standards of code quality and user experience we strive to achieve.
-          </p>
-          <div className="mt-6 font-medium">
-            <p className="text-gray-700">Team Members:</p>
-            <ul className="list-disc list-inside text-gray-700">
-              <li>Michael Mutinda - Frontend/Backend Engineer</li>
-              <li>Annah Njuguna - Frontend/Backend Engineer</li>
-              <li>Merlix Gikunju - Frontend/Backend Enginner</li>
-              <li>Hillary Kiprotich - Frontend/Backend Engineer</li>
-              <li>Kennedy Ryan - Frontend/Backend Engineer</li>
-              <li>Steve Murimi - Frontend/Backend Engineer</li>
-            </ul>
-          </div>
-        </div>
+    <div className="flex flex-col items-center font-roboto bg-white">
+      <div>
+        <img src={Banner} className='w-screen'/>
+      </div>
+      <div className='m-10 max-w-[1024px]'>
+        <h1 className='text-[120px] font-[700]'>About ReactTube</h1>
+        <p className='mb-10 text-[72px]'>
+          Our mission is to recreate the YouTube frontend to the best of our ability while learning React.
+        </p>
+        <p className='mb-10 text-[72px] font-thin'>
+          This project does not include a backend and thus utilises the official YouTube API to fetch data directly from Youtube.
+        </p>
+        <p className='mb-10 text-[72px] font-thin'>
+          This project utilizes the following technologies:
+          <ul className='flex space-x-10 items-center text-[50px]'>
+            <li><img className='h-12' src="https://img.icons8.com/?size=48&id=dJjTWMogzFzg&format=png" alt="Vite Logo"/> Vite</li>
+            <li><img className='h-12' src="https://img.icons8.com/?size=48&id=108784&format=png" alt="JavaScript Logo"/> JavaScript</li>
+            <li><img className='h-12' src="https://img.icons8.com/?size=80&id=NfbyHexzVEDk&format=png" alt="React Logo"/> React</li>
+            <li><img className='h-12' src="https://img.icons8.com/?size=48&id=x7XMNGh2vdqA&format=png" alt="Tailwind Logo"/> Tailwind</li>
+            <li><img className='h-12' src="https://img.icons8.com/?size=80&id=en2FZIAZdquE&format=png" alt="Git Logo"/> Git</li>
+          </ul>
+        </p>
       </div>
     </div>
   );

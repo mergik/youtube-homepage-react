@@ -15,7 +15,7 @@ function App() {
 
         <div className='flex min-h-screen'>
           <Sidebar />
-          {/* Routes replace the Switch component */}
+          
           <Routes>
             <Route path="/" element={<Videobody />} />
             <Route path="/search" element={<SearchResults />} />
