@@ -3,19 +3,19 @@ import { TEAMMEMBERS } from './teamMembers';
 
 export const Contact = () => {
   return (
-    <div className='flex flex-col w-screen items-center font-roboto bg-white'>
+    <div className='flex flex-col w-screen mt-[64px] items-center font-roboto bg-white'>
         <section className='max-w-[1024px] p-10 items-center'>
             <h1 className='text-[72px] font-[700]'>
-                Meet the team making great stuff.
+                Meet the team making <span className='p-2 border-double border-4 border-green-500'>great</span> stuff.
             </h1>
             <p className='text-[32px] font-thin'>
                 We are a complete team comprising of individuals specializing in different aspects of a project lifecycle.
             </p>
         </section>
 
-        <section className='flex flex-wrap m-10 justify-between gap-y-10 max-w-[1024px]'>
+        <section className='flex flex-wrap m-10 p-2 rounded-xl justify-between gap-y-10 max-w-[1024px] bg-gradient-to-b from-gray-400 to-white'>
             {TEAMMEMBERS.map((member) => (
-                <div key={member.key} className='w-[300px] h-[450px] rounded-lg '>
+                <div key={member.key} className='w-[300px] h-[450px] rounded-lg shadow-lg'>
                     <img className='w-[300px] h-[300px] rounded-xl rounded-b-none bg-green-950' 
                     src={`https://avatars.githubusercontent.com/${member.github}`} 
                     alt='avatar' />
