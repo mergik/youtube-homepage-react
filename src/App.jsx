@@ -5,6 +5,7 @@ import { Videobody } from './components/Videobody/Videobody';
 import SearchResults from './pages/SearchResults/SearchResults';
 import { AboutUs } from './pages/AboutUs/AboutUs';
 import { Contact } from './pages/ContactUs/Contact';
+import { Copyright } from './pages/Copyright/Copyright';
 
 
 
@@ -23,7 +24,7 @@ function App() {
             <Route path="/search" element={<SearchResults />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
-            
+            <Route path='/copyright' element={<Copyright />} />
           </Routes>
         </div>
       </div>
