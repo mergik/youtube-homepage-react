@@ -3,7 +3,7 @@ import Banner from "/ReactTube_About_Banner.webp"
 
 export const AboutUs = () => {
   return (
-    <div className="flex flex-col items-center font-roboto bg-white">
+    <div className="flex flex-col mt-[64px] items-center font-roboto bg-white">
       <div>
         <img src={Banner} className='w-screen'/>
       </div>
