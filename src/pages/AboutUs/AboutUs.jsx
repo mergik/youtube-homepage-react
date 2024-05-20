@@ -7,6 +7,7 @@ export const AboutUs = () => {
       <div>
         <img src={Banner} className='w-screen'/>
       </div>
+
       <div className='m-10 max-w-[1024px]'>
         <h1 className='text-[120px] font-[700]'>About ReactTube</h1>
         <p className='mb-10 text-[72px]'>
@@ -26,6 +27,11 @@ export const AboutUs = () => {
           </ul>
         </p>
       </div>
+
+      <section className='mt-52 h-[200px] place-content-end w-screen bg-pattern'>
+            <img src='/ReactTube_Logo-White.png'
+            className='h-16 m-10 pt-5'/>
+      </section>
     </div>
   );
 };
