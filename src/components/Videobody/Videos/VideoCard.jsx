@@ -14,7 +14,7 @@ export const VideoCard = () => {
     }, []);
 
     return (
-        <div className="flex flex-row flex-wrap pt-24 px-3">
+        <div className="flex flex-row flex-wrap ml-24 pt-24 px-3">
             {searchResults.map((data) => (
                 <section
                     className="flex flex-col justify-center m-2 rounded-lg"
