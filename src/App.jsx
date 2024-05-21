@@ -7,10 +7,7 @@ import { AboutUs } from './pages/AboutUs/AboutUs';
 import { Contact } from './pages/ContactUs/Contact';
 import { Copyright } from './pages/Copyright/Copyright';
 
-
-
 function App() {
- 
   return (
     <Router>
       <div className='font-roboto'>
@@ -28,8 +25,8 @@ function App() {
           </Routes>
         </div>
       </div>
-    </div>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
