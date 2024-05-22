@@ -11,7 +11,7 @@ export const AboutUs = () => {
       <div className='m-10 max-w-[1024px]'>
         <h1 className='text-[120px] font-[700]'>About ReactTube</h1>
         <p className='mb-10 text-[72px]'>
-          Our mission is to recreate the YouTube frontend to the best of our ability while learning React.
+          Our mission is to recreate the YouTube frontend to the best of our ability while interacting with React.
         </p>
         <p className='mb-10 text-[72px] font-thin'>
           This project does not include a backend and thus utilises the official YouTube API to fetch data directly from Youtube.
