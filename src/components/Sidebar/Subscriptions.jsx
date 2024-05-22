@@ -19,7 +19,7 @@ const handleShowMore = () => { // Function to show more results
         Subscriptions
       </p>
       {searchResults?.slice(0, displayedResults).map((data) => ( // Conditional rendering for searchResults and slice initial 5 results
-        <section key={data.id} className="flex my-4 space-x-2 text-lg items-center pl-3 pb-2 cursor-pointer hover:bg-gray-600">
+        <section key={data.id} className="flex my-4 rounded-lg space-x-2 text-sm items-center pl-3 pb-2 cursor-pointer hover:bg-gray-800">
             <img
               src={data.snippet.thumbnails.default.url}
               className=" rounded-full w-[25px] h-[25px] "
@@ -32,7 +32,7 @@ const handleShowMore = () => { // Function to show more results
       ))}
       {/* Show More */}
       { searchResults?.length > displayedResults && ( // Conditional rendering for "Show More" button
-      <div className="flex rounded-lg p-2 items-center text-lg pl-4 hover:bg-gray-800 cursor-pointer space-x-2">
+      <div className="flex rounded-lg p-2 items-center text-sm pl-4 hover:bg-gray-800 cursor-pointer space-x-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
