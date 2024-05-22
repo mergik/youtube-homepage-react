@@ -48,7 +48,32 @@ To build this project run
 - [Annah Njuguna](https://www.github.com/njugunaannah)
 - [Michael Mutinda](https://www.github.com/KollihTheGuruh)
 - [Hillary Kiprotich](https://www.github.com/hillary-254)
+- [Kennedy Ryan ](https://www.github.com/KennedyRyan-code)
+- [Steve Murimi](https://www.github.com/Stevecmd)
 
 ## License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+
+## Deploying changes to the branch "Steve"
+```sh
+git checkout main 
+git pull
+git checkout steve
+```
+Replace "branch-name" with the branch whose changes you want to merge
+```sh
+git merge origin/<branch-name>
+
+```
+Initial setup of the upstream branch:
+```sh
+
+git push -u origin steve
+
+```
+After this you can push using:
+```sh
+git push
+```
