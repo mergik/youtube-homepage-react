@@ -1,7 +1,10 @@
 import React, { useContext } from "react";
 //import { useLocation } from "react-router-dom";
 import { ResultsContext } from "../../context/ResultsContext";
-import { useFormatUploadDate, useFormatViewCount } from "../../hooks/useFormattingHelpers";
+import {
+  useFormatUploadDate,
+  useFormatViewCount,
+} from "../../hooks/useFormattingHelpers";
 
 const SearchResults = () => {
   //const location = useLocation();
@@ -40,9 +43,7 @@ const SearchResults = () => {
               {/* Views & Date */}
               <div className="flex space-x-1 text-sm items-center">
                 <p>{useFormatViewCount(data.statistics.viewCount)} Views</p>
-                <p>
-                  • {useFormatUploadDate(data.snippet.publishTime)}{" "}
-                </p>
+                <p>• {useFormatUploadDate(data.snippet.publishTime)} </p>
               </div>
 
               {/* Channel Info */}
