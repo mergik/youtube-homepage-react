@@ -35,19 +35,13 @@ const Sidebar = () => {
         </div>
       )}
       {/* Main content */}
-      <div
-        className={`transition-all duration-300 ${!isOpen ? "col-span-2" : ""}`}
-      >
+      <div className={`transition-all duration-300 ${!isOpen ? 'col-span-2' : ''}`}>
+
         {/* Your main content components */}
       </div>
       {/* Hamburger icon */}
       <button className="fixed top-4 left-4 z-50" onClick={toggleSidebar}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="w-8 h-8"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
           <path d="M3 12h18M3 6h18M3 18h18"></path>
         </svg>
       </button>
