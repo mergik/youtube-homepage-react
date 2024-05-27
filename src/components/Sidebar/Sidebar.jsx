@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import Nav from './Nav';
-import You from './You';
-import Subscriptions from './Subscriptions';
-import Explore from './Explore';
-import More from './More';
-import Footer from './Footer';
-import Settings from './Settings';
+import React, { useState } from "react";
+import Nav from "./Nav";
+import You from "./You";
+import Subscriptions from "./Subscriptions";
+import Explore from "./Explore";
+import More from "./More";
+import Footer from "./Footer";
+import Settings from "./Settings";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,10 +15,16 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="grid" style={{ gridTemplateColumns: isOpen ? '250px 1fr' : '1fr' }}>
+    <div
+      className="grid"
+      style={{ gridTemplateColumns: isOpen ? "250px 1fr" : "1fr" }}
+    >
       {/* Sidebar */}
       {isOpen && (
-        <div className={`bg-black text-white transition-all duration-300 overflow-y-auto fixed top-16 left-0 bottom-0 w-64`} style={{ height: 'calc(100vh - 64px)' }}>
+        <div
+          className={`bg-black text-white transition-all duration-300 overflow-y-auto fixed top-16 left-0 bottom-0 w-64`}
+          style={{ height: "calc(100vh - 64px)" }}
+        >
           <Nav />
           <You />
           <Subscriptions />
@@ -30,6 +36,7 @@ const Sidebar = () => {
       )}
       {/* Main content */}
       <div className={`transition-all duration-300 ${!isOpen ? 'col-span-2' : ''}`}>
+
         {/* Your main content components */}
       </div>
       {/* Hamburger icon */}

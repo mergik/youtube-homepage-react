@@ -22,7 +22,9 @@ const Footer = () => {
         <a href="#" className="hover:cursor-default">Test New Features</a>
       </div>
 
-      <p className="m-2 font-light text-xs text-gray-500">© 2024 - 20955 Task Force</p>
+      <p className="m-2 font-light text-xs text-gray-500">
+        © 2024 - 20955 Task Force
+      </p>
     </div>
   );
 };
