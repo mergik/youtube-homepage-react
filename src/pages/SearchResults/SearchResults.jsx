@@ -40,9 +40,8 @@ const SearchResults = () => {
               {/* Views & Date */}
               <div className="flex space-x-1 text-sm items-center">
                 <p>{useFormatViewCount(data.statistics.viewCount)} Views</p>
-                <p>
-                  • {useFormatUploadDate(data.snippet.publishTime)}{" "}
-                </p>
+
+                <p>• {useFormatUploadDate(data.snippet.publishTime)} </p>
               </div>
 
               {/* Channel Info */}
